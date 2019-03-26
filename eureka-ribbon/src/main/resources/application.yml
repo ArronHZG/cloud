@@ -1,0 +1,16 @@
+spring:
+  application:
+    name:ribbon-consumer
+
+server:
+  port: 9999
+
+
+# 注册中心配置
+eureka:
+  instance:
+#    prefer-ip-address: true
+    appname: ribbon-consumer
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:1111/eureka/
